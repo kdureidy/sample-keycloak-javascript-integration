@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keycloak & JavaScript Sample</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="http://localhost:8080/auth/js/keycloak.js"></script>
+</head>
+<body>
+    
+    <div id="content" class="d-none">
+        <a class="link" href="http://localhost:8080/auth/realms/sample/protocol/openid-connect/logout?redirect_uri=http%3A%2F%2F127.0.0.1">Logout</a>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>First Name</th>
+                    <th>LastName</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span id="username"></span></td>
+                    <td><span id="email"></span></td>
+                    <td><span id="firstName"></span></td>
+                    <td><span id="lastName"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
